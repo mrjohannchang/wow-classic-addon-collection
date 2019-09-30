@@ -1,5 +1,9 @@
 # A personal addon collection of World of Warcraft Classic
 
+Download [full package](https://github.com/changyuheng/wow-classic-addon-collection/releases).
+
+Inspired by [Rainbow UI](https://rainbowui.wordpress.com/).
+
 ## Aspect
 
 ### Action bars
@@ -46,21 +50,22 @@
 * [OmniCC](https://www.curseforge.com/wow/addons/omni-cc)
 * [Quartz](https://www.curseforge.com/wow/addons/quartz)
 * [RangeDisplay](https://www.curseforge.com/wow/addons/range-display)
-* [RealMobHealth](https://www.curseforge.com/wow/addons/real-mob-health)
+* [Real Mob Health](https://www.curseforge.com/wow/addons/real-mob-health)
 * [tullaRange](https://www.curseforge.com/wow/addons/tullarange)
 
 ### Libraries
 
-* [RealMobHealth](https://www.curseforge.com/wow/addons/real-mob-health)
+* [Real Mob Health](https://www.curseforge.com/wow/addons/real-mob-health)
 
 ### Map and minimap
 
 * [Mapster](https://www.curseforge.com/wow/addons/mapster)
+* [Questie](https://www.curseforge.com/wow/addons/questie)
 
 ### Miscellaneous
 
 * [Leatrix Plus (Classic)](https://www.curseforge.com/wow/addons/leatrix-plus-classic)
-* [RealMobHealth](https://www.curseforge.com/wow/addons/real-mob-health)
+* [Real Mob Health](https://www.curseforge.com/wow/addons/real-mob-health)
 
 ### PvP
 
@@ -76,6 +81,7 @@
 ### Tooltip
 
 * [Leatrix Plus (Classic)](https://www.curseforge.com/wow/addons/leatrix-plus-classic)
+* [Questie](https://www.curseforge.com/wow/addons/questie)
 * [Vendor Price](https://www.curseforge.com/wow/addons/vendor-price)
 
 ### Unit frames
@@ -83,9 +89,7 @@
 * [ClassicAuraDurations](https://www.curseforge.com/wow/addons/classicauradurations)
 * [ClassicCastbars](https://www.curseforge.com/wow/addons/classiccastbars)
 * [NeatPlates](https://www.curseforge.com/wow/addons/neatplates)
-* [RealMobHealth](https://www.curseforge.com/wow/addons/real-mob-health)
-
---
+* [Real Mob Health](https://www.curseforge.com/wow/addons/real-mob-health)
 
 ## Class
 
