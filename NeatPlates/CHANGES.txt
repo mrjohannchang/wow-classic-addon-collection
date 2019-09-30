@@ -1,0 +1,16 @@
+lightweight tag 211cef619a50627414ac13013ad3efe09945b59c 1.13.2.35
+Author:	Luxocracy <luxor355@gmail.com>
+Date:	Sat Sep 28 12:31:45 2019 +0200
+
+commit 211cef619a50627414ac13013ad3efe09945b59c
+Author: Luxocracy <luxor355@gmail.com>
+Date:   Sat Sep 28 12:31:45 2019 +0200
+
+    Added Spell Icon toggle & minor fixes
+    
+    - Fixed an error that would somtimes occur when no health data could be gotten from 'RealMobHealth'
+    - Added a new status text option 'Target Of (Class Colored)' which is the same as 'Target Of' but colors the text in the appropriate class color.
+    - Added the option to show/hide spell icon
+    - Added an option to force shadows on status text
+    - Updated Locales
+

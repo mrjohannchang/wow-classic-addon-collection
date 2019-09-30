@@ -1,0 +1,14 @@
+## Interface: 11302
+## Title: QuestGuru |cffffffff2.1.7 by Lazare|r
+## Version: 2.1.7
+## Notes: Quest Log Enhancement#  "/qgs" for help
+## Author: Lazare
+## SavedVariables: QuestGuruSettings
+## SavedVariablesPerCharacter: QuestGuruCollapsedHeaders
+
+#DebugAids.lua
+
+QuestGuru.xml
+QuestGuru.lua
+#QuestGuruOptions.lua
+#QuestGuruOptions.xml

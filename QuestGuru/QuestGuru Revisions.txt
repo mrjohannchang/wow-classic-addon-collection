@@ -1,0 +1,40 @@
+QuestGuru_Classic ChangeLog
+===================
+
+Version 2.1.7
+--------------
+Introduced a bug in 2.1.6 having
+to do with toggling the window
+Fixed in 2.1.7
+
+Version 2.1.6
+--------------
+Removed the guts of the QuestGuruSounds
+folder except for a text files explaining that
+the folder should be trashed as it is no longer
+part of QuestGuru after this update.
+Also fixed shift-clicking a quest title to
+have it appear in an open chat entry (to be copied
+or what ever the user choses to do with it).
+
+Version 2.1.5
+--------------
+Minor fixes, working on others
+
+Version 2.1.4
+--------------
+Found two ore bugs and
+squished them
+
+Version 2.1.3
+--------------
+Squashed bugs…
+
+Version 2.1.2
+--------------
+Minor changes
+
+Version 2.1.1
+--------------
+Changes made to convert "retail"
+Into Classic

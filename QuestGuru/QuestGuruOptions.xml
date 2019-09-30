@@ -1,0 +1,271 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <Frame name="QuestGuru_Options">
+
+        <Layers>
+
+            <Layer level="ARTWORK">
+
+                <FontString name="$parent_Title" inherits="GameFontNormalLarge">
+                    <Anchors>
+                        <Anchor point="TOPLEFT">
+                            <Offset x="20" y="-15"/>
+                        </Anchor>
+                    </Anchors>
+                </FontString>
+
+                <FontString name="$parent_ModeLabel" inherits="GameFontNormalSmall" text="Objective Sound">
+                    <Anchors>
+                        <Anchor point="TOPLEFT">
+                            <Offset x="85" y="-60" />
+                        </Anchor>
+                    </Anchors>
+                </FontString>
+
+                <FontString name="$parent_SortOrderLabel" inherits="GameFontNormalSmall" text="Completed Sound">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parent_ModeLabel" relativePoint="BOTTOMLEFT">
+                            <Offset>
+                                <AbsDimension x="0" y="-20" />
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </FontString>
+
+<!-- 
+                <FontString name="$parent_AnchorPointLabel" inherits="GameFontNormalSmall" text="Anchor Point">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parent_SortOrderLabel" relativePoint="BOTTOMLEFT">
+                            <Offset>
+                                <AbsDimension x="0" y="-20" />
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </FontString>
+ -->
+
+            </Layer>
+
+        </Layers>
+
+        <Frames>
+
+            <Frame name="$parent_Mode" inherits="UIDropDownMenuTemplate" enableMouse="true">
+                <Anchors>
+                    <Anchor point="LEFT" relativeTo="$parent_ModeLabel" relativePoint="RIGHT">
+                        <Offset>
+                            <AbsDimension x="0" y="-2" />
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        QUESTGURUADDON_G.Options_Mode_OnLoad(self);
+                    </OnLoad>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText("Selects which players to show");
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </Frame>
+
+            <Frame name="$parent_SortOrder" inherits="UIDropDownMenuTemplate" enableMouse="true">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parent_Mode" relativePoint="BOTTOMLEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="2" />
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        QUESTGURUADDON_G.Options_SortOrder_OnLoad(self);
+                    </OnLoad>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(QUESTGURUADDON_G.TOOLTIP.SORTORDER);
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </Frame>
+
+            <Frame name="$parent_AnchorPoint" inherits="UIDropDownMenuTemplate" enableMouse="true">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parent_SortOrder" relativePoint="BOTTOMLEFT">
+                        <Offset>
+                            <AbsDimension x="-10" y="2" />
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        QUESTGURUADDON_G.Options_AnchorPoint_OnLoad(self);
+                    </OnLoad>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(QUESTGURUADDON_G.TOOLTIP.ANCHORPOINT);
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </Frame>
+
+            <CheckButton name="$parent_Mute" inherits="OptionsCheckButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parent_AnchorPointLabel" relativePoint="BOTTOMLEFT">
+                        <Offset>
+                            <AbsDimension x="-5" y="-30"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        _G[self:GetName().."Text"]:SetText("Mute all quest sounds");
+                    </OnLoad>
+                    <OnClick>
+                        QUESTGURUADDON_G.Options_Mute_OnClick(self);
+                    </OnClick>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(QUESTGURUADDON_G.TOOLTIP.MUTE);
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </CheckButton>
+
+            <CheckButton name="$parent_ShowQuestLevels" inherits="OptionsCheckButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parent_Mute" relativePoint="BOTTOMLEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/>
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        _G[self:GetName().."Text"]:SetText("Show quest levels in QuestGuru");
+                    </OnLoad>
+                    <OnClick>
+                        QUESTGURUADDON_G.Options_ShowQuestLevels_OnClick(self);
+                    </OnClick>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(QUESTGURUADDON_G.TOOLTIP.SHOWQUESTLEVELS);
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </CheckButton>
+
+            <CheckButton name="$parent_QGTooltip" inherits="OptionsCheckButtonTemplate">
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parent_ShowQuestLevels" relativePoint="BOTTOMLEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="0"/> QGTooltip  QGTOOLTIP
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        _G[self:GetName().."Text"]:SetText("Enable tooltips in QuestGuru");
+                    </OnLoad>
+                    <OnClick>
+                        QUESTGURUADDON_G.Options_QGTooltip_OnClick(self);
+                    </OnClick>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(QUESTGURUADDON_G.TOOLTIP.QGTOOLTIP);
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </CheckButton>
+<!-- end of options -->
+
+            <Slider name="$parent_Alpha" inherits="OptionsSliderTemplate">
+                <Size>
+                    <AbsDimension x="220" y="16"/>
+                </Size>
+                <Anchors>
+                    <Anchor point="TOPLEFT" relativeTo="$parent_HideCooldownText" relativePoint="BOTTOMLEFT">
+                        <Offset>
+                            <AbsDimension x="0" y="-20" />
+                        </Offset>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        _G[self:GetName().."High"]:SetText("1");
+                        _G[self:GetName().."Low"]:SetText("0");
+                        self:SetMinMaxValues(0.0,1.0);
+                        self:SetValueStep(0.01);
+                    </OnLoad>
+                    <OnValueChanged>
+                        QuestGuruConfig.Alpha = self:GetValue();
+                        QuestGuruFrame_Background:SetAlpha(QuestGuruConfig.Alpha);
+                        _G[self:GetName().."Text"]:SetText("Transparency ("..string.format("%.2f", QuestGuruConfig.Alpha)..")");
+                    </OnValueChanged>
+                    <OnEnter>
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+                        GameTooltip:SetText(QUESTGURUADDON_G.TOOLTIP.ALPHA);
+                    </OnEnter>
+                    <OnLeave>
+                        GameTooltip:Hide();
+                    </OnLeave>
+                </Scripts>
+            </Slider>
+		
+        </Frames>
+
+        <Scripts>
+            <OnLoad>
+                QUESTGURUADDON_G.Options_OnLoad(self);
+            </OnLoad>
+        </Scripts>
+
+    </Frame>	
+
+	<!-- 
+<Frame name="QuestGuru_HelpFrame">
+		<Frames>
+	
+			<ScrollFrame name="$parentScrollFrame" inherits="UIPanelScrollFrameTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" x="0" y="-4"/>
+					<Anchor point="BOTTOMRIGHT" x="-25" y="5"/>
+				</Anchors>
+				<ScrollChild>
+					<Frame>
+						<Size x="500" y="500"/>
+						<Layers>
+							<Layer level="ARTWORK">
+								<FontString name="QuestGuru_HelpFrameText" inherits="GameFontHighlightSmall" justifyH="LEFT" justifyV="TOP"/>
+							</Layer>
+						</Layers>
+					</Frame>
+				</ScrollChild>
+			</ScrollFrame>		
+
+		</Frames>
+
+		<Scripts>
+			<OnLoad>
+				QUESTGURUADDON_G.HelpFrame_OnLoad(self);
+			</OnLoad>
+		</Scripts>
+
+	</Frame>
+ -->
+
+</Ui>
