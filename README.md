@@ -42,6 +42,34 @@ Inspired by [Rainbow UI](https://rainbowui.wordpress.com/).
 
 * [Leatrix Plus (Classic)](https://www.curseforge.com/wow/addons/leatrix-plus-classic)
 
+### Class
+
+#### Caster
+
+* [ClassicCastbars](https://www.curseforge.com/wow/addons/classiccastbars)
+* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
+
+#### Damager dealer
+
+* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
+
+#### Healer
+
+* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
+
+#### Rogue
+
+* [ClassicSpellActivations](https://www.curseforge.com/wow/addons/classicspellactivations)
+
+#### Tank
+
+* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
+* [NeatPlates](https://www.curseforge.com/wow/addons/neatplates)
+
+#### Warrior
+
+* [ClassicSpellActivations](https://www.curseforge.com/wow/addons/classicspellactivations)
+
 ### Combat
 
 * [ClassicCastbars](https://www.curseforge.com/wow/addons/classiccastbars)
@@ -90,34 +118,6 @@ Inspired by [Rainbow UI](https://rainbowui.wordpress.com/).
 * [ClassicCastbars](https://www.curseforge.com/wow/addons/classiccastbars)
 * [NeatPlates](https://www.curseforge.com/wow/addons/neatplates)
 * [Real Mob Health](https://www.curseforge.com/wow/addons/real-mob-health)
-
-## Class
-
-### Caster
-
-* [ClassicCastbars](https://www.curseforge.com/wow/addons/classiccastbars)
-* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
-
-### Damager dealer
-
-* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
-
-### Healer
-
-* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
-
-### Rogue
-
-* [ClassicSpellActivations](https://www.curseforge.com/wow/addons/classicspellactivations)
-
-### Tank
-
-* [ClassicThreatMeter](https://www.curseforge.com/wow/addons/classicthreatmeter)
-* [NeatPlates](https://www.curseforge.com/wow/addons/neatplates)
-
-### Warrior
-
-* [ClassicSpellActivations](https://www.curseforge.com/wow/addons/classicspellactivations)
 
 ## Translation
 
